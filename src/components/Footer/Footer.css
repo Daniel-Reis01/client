@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.footer-background {
+  background-color: rgb(223, 37, 4);
+  margin:12.5% ;
+  margin-right: 0%;
+  width: 75%;
+  height: 370px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+}
+.footer-promo p{
+  margin-top: 2%;
+  margin-left: 15%;
+  color:azure;
+  
+}
+.footer-promo h1{
+  margin-top: 2%;
+  margin-left: 14%;
+ font-size:3em ;
+  color:white ;
+}
+.footer-headphone img{
+  width: 110%;
+}
+.footer-sale p{
+  margin-top: 2%;
+  color:azure;
+  
+}
+.footer-sale h2{
+  margin-top: 2%;
+ font-size:3em ;
+  color:white ;
+}
+.footer-sale button{
+  margin-top: 2%; 
+  width: 6em;
+  height: 1.9em;
+  border-radius: 10px;
+  color: rgb(204, 15, 15);
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 5px 0 #802b03;
+}
+.footer-sale button:hover {
+background-color: #7a2804;
+box-shadow: 0 5px 0 #fdfdfd;
+}
+.last-footer{
+  display: flex;
+  justify-content: center;
+}
+.social-medias{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 900px) {
+  .footer-headphone img {
+    width:110%;
+    height: auto;
+  }
+  .footer-promo p{
+    font-size: 15px;
+  }
+  .footer-sale p{
+    font-size: 15px;
+  }
+  
+}
+@media screen  and (max-width:600px){
+  .footer-headphone img {
+    width:110%;
+    height: auto;
+  }
+  .footer-promo p{
+    font-size: 13px;
+  }
+  .footer-promo h1{
+    font-size: 2em;
+  }
+  .footer-sale p{
+    font-size: 13px;
+  }
+  .footer-sale h2{
+    font-size: 2em;
+  }
+  
+}
+@media screen and (max-width:400px){
+  .footer-background {
+    width: 75%;
+  height: 200px;
+  }
+  .footer-headphone img {
+    width:110%;
+    height: auto;
+  }
+  .footer-promo p{
+    font-size: 10px;
+  }
+  .footer-promo h1{
+    font-size: 1.3em;
+  }
+  .footer-sale p{
+    font-size: 10px;
+  }
+  .footer-sale h2{
+    font-size: 1.3em;
+  }
+  .footer-sale button{
+    font-size:11px ;
+  }
+}

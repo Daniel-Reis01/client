@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 3%;
+    margin-right: 7%;
+
+    
+    
+  }
+  
+  .nav-bar p {
+    color: rgb(151, 151, 151);
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .Links{
+    text-decoration: none;
+  }
+  
+  .nav-bar img {
+    height: 1rem;
+  }
+  .nav-bar button{
+    color: rgb(123, 43, 170);
+  }
+  .gift-bag h1{
+    background-color: rgb(233, 69, 40);
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    font-size: 0.8em;
+    text-align: center;
+    transform: translate(15px, 10px);
+    color: rgb(85, 84, 84);
+  
+  }
