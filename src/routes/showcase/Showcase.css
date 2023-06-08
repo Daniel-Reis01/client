@@ -6,76 +6,130 @@
 .show-box {
   display: flex;
 }
-.show-box img {
-  border-radius: 10px;
-  width: 350px;
+.show-img {
+  display: flex;
   margin-left: 6%;
+  margin-top: 20px;
+}
+.show-box img {
+  background-color: rgb(168, 171, 173);
+  border-radius: 10px;
+  width: 30%;
+  margin-left: 6%;
+  margin-right: 1%;
   margin-top: 5%;
+  margin-top: 15px;
 }
-.show-img{
-  margin-left: 5%;
+
+.sec-buy {
+  display: flex;
 }
-.secondary-img{
+
+.btn {
+  position: relative;
+  font-size: 17px;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.3em 1em;
+  display: inline-block;
+  border-radius: 6em;
+  transition: all 0.2s;
+  border: none;
+  font-family: inherit;
+  font-weight: 500;
+  color: black;
+  background-color: rgb(235, 235, 235);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn::after {
+  background-color: #696868;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.secondary-img {
   margin-top: 2%;
   margin-left: 1.2%;
   width: 3.5rem;
   height: 3.5rem;
   border-radius: 10px;
-  
-  
 }
-.secondary-img:hover{
-  height: 262px;
-  width: 389px;
-  background:
-    linear-gradient(
-      rgba(0,0,0,.3),rgba(0,0,0,.3)
-    ),
-}
+
 .show-description {
   margin-top: 5%;
 }
 .show-description .price {
-    font-size: larger;
+  font-size: larger;
   color: rgb(235, 46, 13);
 }
-.buy-buttons{
+.buy-buttons {
   display: flex;
   justify-content: center;
+  margin-left: 10%;
+  margin-top: 25px;
+ 
 }
-.buy-buttons p{
+.buy-buttons p {
   padding-left: 23px;
   padding-top: 2px;
   background-color: rgb(117, 214, 182);
   width: 1.2em;
   height: 1.2em;
   font-size: 40px;
-  box-shadow:  0 5px 0 rgba(2, 90, 148, 0.5);
+  box-shadow: 0 5px 0 rgba(2, 90, 148, 0.5);
   border-radius: 5px;
+
 }
-.buy-buttons p:hover{
+.buy-buttons p:hover {
   background-color: rgb(1, 68, 46);
-  box-shadow:  0 5px 0 rgb(3, 219, 147);
+  box-shadow: 0 5px 0 rgb(3, 219, 147);
   cursor: pointer;
 }
-.buy-buttons h3{
+.buy-buttons h3 {
   width: 1.5em;
   height: 1.5em;
   padding-left: 23px;
   padding-top: 10px;
-  font-size:30px;
+  font-size: 30px;
   margin-left: 1%;
   margin-right: 1%;
   background-color: rgba(159, 180, 211, 0.651);
 }
-.buy-show{
+.buy-show {
+  background-color: rgb(157, 241, 20);
   margin-left: 1%;
   margin-right: 1%;
-  width: 5.5em;
-  height: 6.0em;
- 
+  width: 7em;
+  height: 3em;
+  font-size: 20px;
 }
-.add-gift{
+.add-gift {
   width: 5.5em;
-  height: 4.0em;
+  height: 4em;
 }
