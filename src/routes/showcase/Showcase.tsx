@@ -1,5 +1,5 @@
 import "./Showcase.css";
-import { AiOutlineGift } from 'react-icons/Ai'
+import { BsCart4 } from 'react-icons/Bs'
 import { Key, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Product } from "../../components/BestProduct/BestProduct";
@@ -56,22 +56,29 @@ function Showcase() {
     });
   };
   if (!product) {
-    return <p>Loading...</p>;
+    return <svg viewBox="25 25 50 50">
+      <circle r="20" cy="50" cx="50"></circle>
+    </svg>;
   }
 
 
   return (
     <><Navbar />
       <section className="show-box">
+         <div className="img-card">
 
         <img id="susu" src={product.images[currentIndex]} alt={product.title} />
+         </div>
 
-        <div className="show-description">
+        <div className="card">
+
           <h1>{product.title}</h1>
-          <p><b>details:</b> <br /> {product.description}</p>
+          <p><b>details:</b> <br />
+            <br /> {product.description}</p>
           <p className="price"><b>${product.price}</b></p>
-        </div>
 
+
+        </div>
       </section>
       <section className="sec-buy">
 
@@ -89,12 +96,13 @@ function Showcase() {
           <button className="btn" onClick={handleNextClick}> &gt; </button>
         </div>
 
+        <hr className="hr3" />
         <div className="buy-buttons">
-          <p onClick={decrementCount}>-</p>
+          <button onClick={decrementCount} className="more-cart"> - </button>
           <h3>{count}</h3>
-          <p onClick={incrementCount}>+</p>
+          <button className="less-cart" onClick={incrementCount}>+</button>
           <button className="buy-show">buy now</button>
-          <button className="add-gift">add to cart<AiOutlineGift /></button>
+          <button className="add-gift">add to cart<BsCart4 /></button>
         </div>
       </section>
 
